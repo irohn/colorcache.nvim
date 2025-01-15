@@ -46,7 +46,7 @@ end
 
 M.setup = function(opts)
   -- overwrite defaults with setup provided options
-  M.defaults = vim.tbl_deep_extend("force", M.defaults, opts)
+  M.defaults = vim.tbl_deep_extend("force", M.defaults, opts or {})
 
   -- Load cached colorscheme if present
   local cached_colorscheme = read_from_cache(M.defaults.color_file)
