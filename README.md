@@ -14,7 +14,7 @@ A simple Neovim plugin that remembers your last selected colorscheme across sess
 Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```lua
 {
-  "username/colorcache.nvim",
+  "irohn/colorcache.nvim",
   config = function()
     require("colorcache").setup()
   end
